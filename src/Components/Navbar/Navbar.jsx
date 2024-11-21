@@ -1,9 +1,9 @@
-<<<<<<< HEAD
 import React, { useContext, useRef, useState } from 'react'
 import './Navbar.css'
 import logo from '../Assets/logo.png'
 import cart_icon from '../Assets/cart_icon.png'
 import { Link } from 'react-router-dom'
+import './Navbar.css'
 import { ShopContext } from '../../Context/ShopContext'
 import nav_dropdown from '../Assets/nav_dropdown.png'
 
@@ -38,26 +38,7 @@ const Navbar = () => {
         <Link to='/cart'><img src={cart_icon} alt="" /></Link>
         <div className="nav-cart-count">{getTotalCartItems()}</div>
       </div>
-
-    </div>
-  );
-}
-
-export default Navbar;
-=======
-import React from 'react'
-import './Navbar.css'
-import navlogo from '../../assets/nav-logo.svg'
-import navProfile from '../../assets/nav-profile.svg'
-
-const Navbar = () => {
-  return (
-    <div className='navbar'>
-      <img src={navlogo} alt="" className='nav-logo' />
-      <img src={navProfile} alt="" className='nav-profile' />
     </div>
   )
 }
-import './Navbar.css'
 export default Navbar
->>>>>>> de1b6fe0133389f7c6c3d9cd3fcc160e2181ddfe

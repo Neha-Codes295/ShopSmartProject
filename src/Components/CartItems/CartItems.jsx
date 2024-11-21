@@ -93,7 +93,7 @@ const CartItems = () => {
                 quantity: cartItems[key]
             }));
         
-            const response = await axios.post('http://localhost:4000/create-checkout-session', {
+            const response = await axios.post('https://shop-smart-fxg5.onrender.com/create-checkout-session', {
               items: items, // Ensure this structure matches the expected structure on the server
               email: userEmail // Ensure the email is properly passed
           });
